@@ -1,9 +1,9 @@
 INSERT INTO roles (id,name) VALUES(1, 'ROLE_SALE_REP'),(2, 'ROLE_DATA_ENTRY'),(3, 'ROLE_WAREHOUSE_MANAGER'),(4, 'ROLE_SMS_OWNER'),(5, 'ROLE_SALE_MANAGER');
 
-INSERT INTO users  VALUES ('1', 'owner', 'ifgowner@ifgowner.com', '1', b'1', 'ifg','$2a$10$npxwaJc/i.y6SB.E73eNl..N.YPFsm4fWFPinEgaG36gKCb9mWQMW', '123', b'0', 'ifgowner'); 
+INSERT INTO users  VALUES ('1', 'owner', 'ifgowner@ifgowner.com', '1', b'1', 'sms','$2a$10$npxwaJc/i.y6SB.E73eNl..N.YPFsm4fWFPinEgaG36gKCb9mWQMW', '123', b'0', 'ifgowner'); 
 INSERT INTO user_roles (user_id, roles_id) VALUES ('1', '4');
 
-INSERT INTO users  VALUES ('2', 'saleManager', 'saleManager@ifg.com', '2', b'1', 'saleManager','$2a$10$npxwaJc/i.y6SB.E73eNl..N.YPFsm4fWFPinEgaG36gKCb9mWQMW', '123', b'0', 'saleManager'); 
+INSERT INTO users  VALUES ('2', 'saleManager', 'saleManager@sms.com', '2', b'1', 'saleManager','$2a$10$npxwaJc/i.y6SB.E73eNl..N.YPFsm4fWFPinEgaG36gKCb9mWQMW', '123', b'0', 'saleManager'); 
 INSERT INTO user_roles (`user_id`, `roles_id`) VALUES ('2', '5');
 
 INSERT INTO warehouse (warehouse_id, code, created_by, creation_date, description, is_active, modification_date, modified_by, name) VALUES
@@ -40,4 +40,4 @@ INSERT INTO payment_method (payment_method_id, created_by, creation_date, descri
 INSERT INTO payment_method (payment_method_id, created_by, creation_date, description, is_active, name) VALUES ('3', 'admin', '1463146383178', 'abc', b'1', 'CASH');
 INSERT INTO payment_method (payment_method_id, created_by, creation_date, description, is_active, name) VALUES ('4', 'admin', '1463146383178', 'abc', b'1', 'CREDIT');
 
-INSERT INTO list_of_taxes (`tax_id`, `add_gst_tax`, `created_by`, `creation_date`, `ifg_gst_tax`, `is_active`, `tri_gst_tax`, `wht`) VALUES ('1', '0', 'admin', '32423423423423', '15', b'1', '17', '0');
+INSERT INTO list_of_taxes (`tax_id`, `add_gst_tax`, `created_by`, `creation_date`, `sms_gst_tax`, `is_active`, `tri_gst_tax`, `wht`) VALUES ('1', '0', 'admin', '32423423423423', '15', b'1', '17', '0');

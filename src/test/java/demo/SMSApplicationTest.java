@@ -110,7 +110,7 @@ public class SMSApplicationTest {
 		logger.info("Creating Ifg salesmanager and ROLE_SALE_MANAGER.");
 		user.setId(0);
 		user.setUsername("salesmanager");
-		 user.setEmail("salemanager@ifg.com");
+		 user.setEmail("salemanager@sms.com");
 		user.setEnabled(true);
 		user.setEmployeeId("12");
 		user.setName("Sales Manager");
@@ -135,7 +135,7 @@ public class SMSApplicationTest {
 		logger.info("Creating User Data Entry and ROLE_DATA_ENTRY.");
 		user.setId(0);
 		user.setUsername("dataentryuser1");
-		// user.setEmail("dataentry@ifg.com");
+		// user.setEmail("dataentry@sms.com");
 		user.setEnabled(true);
 		user.setTempPassword(false);
 		user.setPassword("pass");

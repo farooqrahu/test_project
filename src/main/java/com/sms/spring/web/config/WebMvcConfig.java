@@ -27,13 +27,13 @@ import org.springframework.web.servlet.view.jasperreports.JasperReportsMultiForm
 import org.springframework.web.servlet.view.jasperreports.JasperReportsViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = { "com.ifg.spring.web" })
+@ComponentScan(basePackages = { "com.sms.spring.web" })
 @EnableWebMvc
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
 	private int maxUploadSizeInMb = 3 * 1024 * 1024; // 3 MB
 
-	@Value("${com.ifg.spring.path}")
+	@Value("${com.sms.spring.path}")
 	private String path;
 
 	@Override

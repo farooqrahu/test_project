@@ -212,7 +212,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!-- <configuration> <mainClass>com.ifg.spring.IFGApplication</mainClass> 
+				<!-- <configuration> <mainClass>com.sms.spring.IFGApplication</mainClass> 
 					</configuration> -->
 			</plugin>
 		</plugins>

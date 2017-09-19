@@ -12,7 +12,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 
 import com.sms.spring.model.User;
 
-/*package com.binaryvibes.ifg.Instrumentation;
+/*package com.binaryvibes.sms.Instrumentation;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -25,16 +25,16 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 
-import com.binaryvibes.ifg.entities.Make;
-import com.binaryvibes.ifg.entities.Store;
-import com.binaryvibes.ifg.entities.StoreItem;
-import com.binaryvibes.ifg.entities.StoreUser;
-import com.binaryvibes.ifg.entities.User;
-import com.binaryvibes.ifg.entities.UserDetail;
-import com.binaryvibes.ifg.entities.WeaponType;
-import com.binaryvibes.ifg.services.SetupService;
-import com.binaryvibes.ifg.services.StoreService;
-import com.binaryvibes.ifg.services.UserService;
+import com.binaryvibes.sms.entities.Make;
+import com.binaryvibes.sms.entities.Store;
+import com.binaryvibes.sms.entities.StoreItem;
+import com.binaryvibes.sms.entities.StoreUser;
+import com.binaryvibes.sms.entities.User;
+import com.binaryvibes.sms.entities.UserDetail;
+import com.binaryvibes.sms.entities.WeaponType;
+import com.binaryvibes.sms.services.SetupService;
+import com.binaryvibes.sms.services.StoreService;
+import com.binaryvibes.sms.services.UserService;
 
 public class Utility {
 	private static final Logger logger = Logger.getLogger(Utility.class);
