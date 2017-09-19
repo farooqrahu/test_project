@@ -65,7 +65,7 @@
             { y: '2014', a: 75,  b: 65},
             { y: '2015', a: 100, b: 90}
         ];
-        this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b'], ['IFG', 'Triumph'], ['#EB088D', '#E31C24']);
+        this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b'], ['SMS', 'Triumph'], ['#EB088D', '#E31C24']);
 
         //creating area chart
         var $areaDotData = [

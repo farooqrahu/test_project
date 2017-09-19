@@ -1,4 +1,4 @@
-INSERT INTO roles (id,name) VALUES(1, 'ROLE_SALE_REP'),(2, 'ROLE_DATA_ENTRY'),(3, 'ROLE_WAREHOUSE_MANAGER'),(4, 'ROLE_IFG_OWNER'),(5, 'ROLE_SALE_MANAGER');
+INSERT INTO roles (id,name) VALUES(1, 'ROLE_SALE_REP'),(2, 'ROLE_DATA_ENTRY'),(3, 'ROLE_WAREHOUSE_MANAGER'),(4, 'ROLE_SMS_OWNER'),(5, 'ROLE_SALE_MANAGER');
 
 INSERT INTO users  VALUES ('1', 'owner', 'ifgowner@ifgowner.com', '1', b'1', 'ifg','$2a$10$npxwaJc/i.y6SB.E73eNl..N.YPFsm4fWFPinEgaG36gKCb9mWQMW', '123', b'0', 'ifgowner'); 
 INSERT INTO user_roles (user_id, roles_id) VALUES ('1', '4');
@@ -7,12 +7,12 @@ INSERT INTO users  VALUES ('2', 'saleManager', 'saleManager@ifg.com', '2', b'1',
 INSERT INTO user_roles (`user_id`, `roles_id`) VALUES ('2', '5');
 
 INSERT INTO warehouse (warehouse_id, code, created_by, creation_date, description, is_active, modification_date, modified_by, name) VALUES
-	(1, '001', 'admin', '1463146383178', 'IFGWareHouse', b'1', NULL, NULL, 'IFG'),
+	(1, '001', 'admin', '1463146383178', 'IFGWareHouse', b'1', NULL, NULL, 'SMS'),
 	(2, '001', 'admin', '1463146383178', 'TrimuphWareHouse', b'1', NULL, NULL, 'Trimuph'),
 	(3, '001', 'admin', '1463146383178', 'CentralWareHouse', b'1', NULL, NULL, 'Central');
 	
 INSERT INTO brand (brand_id, created_by, creation_date, description, is_active, modification_date, modified_by, name) VALUES
-	(1, 'none', '1463146383178', 'IFG', b'1', NULL, NULL, 'IFG'),
+	(1, 'none', '1463146383178', 'SMS', b'1', NULL, NULL, 'SMS'),
 	(2, 'none', '1463146383178', 'TRIUMPH', b'1', NULL, NULL, 'TRIUMPH');	
 	
 INSERT INTO `size` (`size_id`, `created_by`, `creation_date`, `is_active`, `modification_date`, `modified_by`, `product_size`, `brand_id`) VALUES	

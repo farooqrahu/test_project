@@ -1,5 +1,5 @@
 /*window.onload = function() {
-	// IFG PRODUCTS
+	// SMS PRODUCTS
 	document.querySelector('#ifgprocat').onclick = function () {
 		swal({
 			title : "Add Product Category!",

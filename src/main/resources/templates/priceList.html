@@ -40,12 +40,12 @@
 								<li id="showIfgPro"><a aria-expanded="true"
 									onclick="setProductView('1')"
 									class="btn waves-effect waves-light ifgtriwdth"
-									data-toggle="tab" href="#navpills-11">IFG</a></li>
+									data-toggle="tab" href="#navpills-11">SMS</a></li>
 								<li id="showTriPro"><a aria-expanded="false"
 									class="btn waves-effect waves-light ifgtriwdth"
 									data-toggle="tab" onclick="setProductView('2')">Triumph</a></li>
 							</ul>
-							<span sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')" class="table-add label label-primary pull-right ion-plus" style="margin-top: -40px !important;     position: static !important; ">
+							<span sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')" class="table-add label label-primary pull-right ion-plus" style="margin-top: -40px !important;     position: static !important; ">
 						<a href="addpro" style="color:#fff !important;">Add New Product</a></span>
 
 							<!-- Notification Messages -->
@@ -104,11 +104,11 @@
 													<td class="tg-yw4l" id="ifgMP"
 														th:text="${productPriceList.marketRetailPrice}">Market
 														Retail Price Rs.</td>
-													<td class="actions"><a sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"
+													<td class="actions"><a sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"
 														th:onclick="'javascript:getProductData(\''+ ${productPriceList.productId} +'\',\''+ ${productPriceList.brand.brandId} +'\');'"
 														href="#" data-toggle="modal" data-target="#ifg-modal"
 														data-overlaySpeed="600" data-overlayColor="#36404a"><i
-															class="fa fa-pencil" style="font-size: 20px;"></i></a> | <a sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"
+															class="fa fa-pencil" style="font-size: 20px;"></i></a> | <a sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"
 														th:onclick="'javascript:setId(\''+ ${productPriceList.productId} +'\');'"
 														data-toggle="modal" href="#" data-target="#modalconfirm"
 														data-overlaySpeed="600" data-overlayColor="#36404a"
@@ -170,11 +170,11 @@
 													<td class="tg-yw4l"
 														th:text="${productPriceList.marketRetailPrice}">Market
 														Retail Price Rs.</td>
-													<td class="actions"><a sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"
+													<td class="actions"><a sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"
 														th:onclick="'javascript:getProductData(\''+ ${productPriceList.productId} +'\',\''+ ${productPriceList.brand.brandId} +'\');'"
 														href="#" data-toggle="modal" data-target="#tri-modal"
 														data-overlaySpeed="600" data-overlayColor="#36404a"><i
-															class="fa fa-pencil" style="font-size: 20px;"></i></a> | <a sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"
+															class="fa fa-pencil" style="font-size: 20px;"></i></a> | <a sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"
 														th:onclick="'javascript:setId(\''+ ${productPriceList.productId} +'\');'"
 														data-toggle="modal" href="#" data-target="#modalconfirm"
 														data-overlaySpeed="600" data-overlayColor="#36404a"
@@ -198,7 +198,7 @@
 		</div>
 		<!-- content -->
 
-		<!--  IFG Modal editing starts -->
+		<!--  SMS Modal editing starts -->
 		<div class="panel-body">
 			<div id="ifg-modal" class="modal fade in col-sm-12" tabindex="-1"
 				role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"

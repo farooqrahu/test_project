@@ -65,16 +65,16 @@ display:none !important;
 									<ul class="nav nav-pills m-b-30" style="padding-left: 35%;">
 										<li id="ifg"><a onclick="loadList('1')" data-toggle="tab"
 											aria-expanded="true"
-											class="btn waves-effect waves-light ifgtriwdth">IFG</a></li>
+											class="btn waves-effect waves-light ifgtriwdth">SMS</a></li>
 										<li id="tri"><a onclick="loadList('2')" data-toggle="tab"
 											aria-expanded="false"
 											class="btn waves-effect waves-light ifgtriwdth">Triumph</a></li>
 									</ul>
-									<span sec:authorize="hasAnyRole('ROLE_WAREHOUSE_MANAGER','ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP')" class="table-add label label-primary pull-right  ion-eye" style="margin-top: -40px !important;     position: static !important; ">
+									<span sec:authorize="hasAnyRole('ROLE_WAREHOUSE_MANAGER','ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP')" class="table-add label label-primary pull-right  ion-eye" style="margin-top: -40px !important;     position: static !important; ">
 						<a href="priceList" style="color:#fff !important;">View Product List</a></span>
 									<div class="tab-content br-n pn">
 
-										<!-- IFG Panel Starts Here -->
+										<!-- SMS Panel Starts Here -->
 										<div id="ifg_panel"></div>
 										<!-- ============================================================== -->
 										<!--Triumph Panel-->

@@ -5,7 +5,7 @@
 
 <link rel="shortcut icon" th:href="@{/images/favicon.png}" />
 
-<title>IFG - International Foundation and garments</title>
+<title>SMS - International Foundation and garments</title>
 <link th:href="@{/plugins/timepicker/bootstrap-timepicker.min.css}"
 	rel="stylesheet" type="text/css" />
 <link
@@ -230,8 +230,8 @@
 												SALES REP</span> <span
 											th:if="${#authorization.expression('hasRole(''ROLE_SALE_MANAGER'')')}">
 												SALES MANAGER</span> <span
-											th:if="${#authorization.expression('hasRole(''ROLE_IFG_OWNER'')')}">
-												IFG OWNER</span> <span
+											th:if="${#authorization.expression('hasRole(''ROLE_SMS_OWNER'')')}">
+												SMS OWNER</span> <span
 											th:if="${#authorization.expression('hasRole(''ROLE_WAREHOUSE_MANAGER'')')}">
 												WAREHOUSE MANAGER</span> <span
 											th:if="${#authorization.expression('hasRole(''ROLE_DATA_ENTRY'')')}">
@@ -271,7 +271,7 @@
 								class="ti-home"></i> <span>Home</span> </a></li>
 
 						<li
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_WAREHOUSE_MANAGER')"><a
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_WAREHOUSE_MANAGER')"><a
 							href="orderlist.html" class="waves-effect animsition-link"><i
 								class="ti-shopping-cart"></i><span
 								class="label label-primary pull-right"></span><span>Orders</span>
@@ -280,24 +280,24 @@
 
 
 						<li
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP')"><a
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP')"><a
 							href="ordercreation.html" class="waves-effect animsition-link"><i
 								class="ti-shopping-cart"></i>Place Order</a></li>
 
 						<li
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_WAREHOUSE_MANAGER')"><a
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_WAREHOUSE_MANAGER')"><a
 							href="history.html" class="waves-effect animsition-link"><i
 								class="ion-android-data "></i><span>History</span> </a></li>
 
 
 						<li
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_WAREHOUSE_MANAGER')">
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_WAREHOUSE_MANAGER')">
 							<a href="invoiceList.html" class="waves-effect animsition-link"><i
 								class="ti-files"></i> <span>Invoices</span> </a>
 
 						</li>
 						<li
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_WAREHOUSE_MANAGER')">
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_WAREHOUSE_MANAGER')">
 							<a href="returnNoteList.html"
 							class="waves-effect animsition-link"><i class="ti-files"></i>
 								<span>Return Note</span> </a>
@@ -305,11 +305,11 @@
 						</li>
 
 
-						<li sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_DATA_ENTRY','ROLE_WAREHOUSE_MANAGER')" class="has_sub"><a href="#" class="waves-effect b"><i
+						<li sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_DATA_ENTRY','ROLE_WAREHOUSE_MANAGER')" class="has_sub"><a href="#" class="waves-effect b"><i
 								class="ti-archive"></i> <span>Product</span> </a>
 							<ul class="list-unstyled">
 								<li><a class="waves-effect animsition-link" href="addpro"
-									sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')">Add
+									sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')">Add
 										Product</a></li>
 								<li
 									><a
@@ -317,27 +317,27 @@
 										Price list</a></li>
 							</ul></li>
 						<li
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_DATA_ENTRY')"
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_DATA_ENTRY')"
 							class="has_sub"><a href="#" class="waves-effect b"><i
 								class="ti-archive"></i> <span>Customer</span> </a>
 
 							<ul class="list-unstyled">
 
 								<li
-									sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_DATA_ENTRY')"><a
+									sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_SALE_REP','ROLE_DATA_ENTRY')"><a
 									class="waves-effect animsition-link" href="customerlist.html">Customer
 										List</a></li>
 								<li
-									sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER')"><a
+									sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER')"><a
 									class="waves-effect animsition-link"
 									href="customerrequestlist.html">Requests List</a></li>
 							</ul></li>
 						<li
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"><a
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER','ROLE_DATA_ENTRY')"><a
 							href="manageuser.html" class="waves-effect animsition-link"><i
 								class="ti-user"></i><span>Users</span></a></li>
 						<li class="has_sub"
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER')"><a
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER')"><a
 							href="#" class="waves-effect b"><i class="ti-settings"></i> <span>Accounts</span>
 						</a>
 
@@ -347,7 +347,7 @@
 									href="accounts.html">TAX Settings</a></li>
 							</ul></li>
 						<li
-							sec:authorize="hasAnyRole('ROLE_IFG_OWNER','ROLE_SALE_MANAGER')"><a
+							sec:authorize="hasAnyRole('ROLE_SMS_OWNER','ROLE_SALE_MANAGER')"><a
 							href="reports.html" class="waves-effect animsition-link"><i
 								class="ti-pencil-alt"></i><span>Reports</span></a></li>
 						<li><a href="help.html" class="waves-effect animsition-link"><i

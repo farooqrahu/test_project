@@ -111,7 +111,7 @@
             { y: '2014', a: 75,  b: 65},
             { y: '2015', a: 100, b: 90}
           ];
-        this.createLineChart('morris-line-example', $data, 'y', ['a', 'b'], ['IFG', 'Triumph'],['0.1'],['#ffffff'],['#999999'], ['#eb088d', '#e31c24']);
+        this.createLineChart('morris-line-example', $data, 'y', ['a', 'b'], ['SMS', 'Triumph'],['0.1'],['#ffffff'],['#999999'], ['#eb088d', '#e31c24']);
 
         //creating area chart
         var $areaData = [
@@ -123,7 +123,7 @@
                 { y: '2014', a: 75, b: 65},
                 { y: '2015', a: 90, b: 60}
             ];
-        this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b'], ['IFG', 'Triumph'], ['#eb088d', '#e31c24']);
+        this.createAreaChart('morris-area-example', 0, 0, $areaData, 'y', ['a', 'b'], ['SMS', 'Triumph'], ['#eb088d', '#e31c24']);
 
         //creating area chart with dotted
         var $areaDotData = [
@@ -135,7 +135,7 @@
                 { y: '2014', a: 75,  b: 65 },
                 { y: '2015', a: 90, b: 60 }
             ];
-        this.createAreaChartDotted('morris-area-with-dotted', 0, 0, $areaDotData, 'y', ['a', 'b'], ['IFG', 'Triumph'],['#ffffff'],['#999999'], ['#eb088d', '#e31c24']);
+        this.createAreaChartDotted('morris-area-with-dotted', 0, 0, $areaDotData, 'y', ['a', 'b'], ['SMS', 'Triumph'],['#ffffff'],['#999999'], ['#eb088d', '#e31c24']);
 
         //creating bar chart
         var $barData  = [
@@ -147,7 +147,7 @@
             { y: '2014', a: 75,  b: 65},
             { y: '2015', a: 100, b: 90}
         ];
-        this.createBarChart('morris-bar-example', $barData, 'y', ['a', 'b'], ['IFG', 'Triumph'], ['#eb088d', '#e31c24']);
+        this.createBarChart('morris-bar-example', $barData, 'y', ['a', 'b'], ['SMS', 'Triumph'], ['#eb088d', '#e31c24']);
 
         //creating Stacked chart
         var $stckedData  = [
@@ -163,7 +163,7 @@
             { y: '2014', a: 75,  b: 65 },
             { y: '2015', a: 100, b: 90 }
         ];
-        this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b'], ['IFG', 'Triumph'], ['#eb088d', '#e31c24']);
+        this.createStackedChart('morris-bar-stacked', $stckedData, 'y', ['a', 'b'], ['SMS', 'Triumph'], ['#eb088d', '#e31c24']);
 
         //creating donut chart
         var $donutData = [

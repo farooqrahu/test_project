@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>school</name>
-	<description>IFG Project BinaryVibes</description>
+	<description>School Management System</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -19,7 +19,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<start-class>com.ifg.spring.IFGApplication</start-class>
+		<start-class>com.sms.spring.SMSApplication</start-class>
 		<java.version>1.8</java.version>
 	</properties>
 
